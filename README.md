@@ -241,10 +241,6 @@ Total number of tests created: 11
 Total number of tests executed: 11
 Requirement coverage: Approximately 90% of the initial requirements were covered, including API response validation, error handling, and performance testing.
 
-Impact of Bugs on Release
-Critical bugs: 1 major bug (slow response time for large queries). This issue could affect users performing generic searches.
-Minor bugs: 2 minor bugs related to unclear error messages and incomplete responses for non-existent searches. 
-
 Identified Risks
 The lack of clear error messages may cause confusion for both users and developers.
 
