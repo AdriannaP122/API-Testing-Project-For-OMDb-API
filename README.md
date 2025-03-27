@@ -1,4 +1,4 @@
-<h1>API Testing Project for **OMDbAPI**</h1>
+API Testing Project for **OMDbAPI**
 
 The scope of this project is to use all  API knowledge gained throught the Software Testing course and apply them in practice, using a live application.
 THe OMDb API is an API where you can view, insert or obtain movie information, all content and images from an movie database.
@@ -9,15 +9,14 @@ In the Authorization section, it will be used for each test an API Key: d0236222
 
 Collection link: **https://www.omdbapi.com/**
 
-<h2>Tests performed</h2>
+Tests performed
 
-<ol>
-<li>**Find OMDb API 1**</li>
+Find OMDb API 
 
-HTTP method for request: **GET**<br>
-Request description: **Search the URL for verification**<br>
-Test types / techniques used: **Functional Testing**<br>
-Response status code: *200 OK**<br>
+HTTP method for request: **GET**
+Request description: **Search the URL for verification**
+Test types / techniques used: **Functional Testing**
+Response status code: *200 OK**
 
 ![image](https://github.com/user-attachments/assets/5807ceeb-9d18-4375-a99b-ace455fce173)
 
