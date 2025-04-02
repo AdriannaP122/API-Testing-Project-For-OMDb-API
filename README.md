@@ -220,11 +220,11 @@ Expected result: API should return a clear error message stating 'Invalid API Ke
 Actual result: Response returns a generic 401 Unauthorized message without clear details<br>
 
 
-Bug: Search with a non-existent movie title returns a misleading response<br>
+Bug: Posting a nonexistent movie title returns a wrong response<br>
 Preconditions: Use a random, non-existent movie title.<br>
 
 Steps to reproduce:<br>
-1.Send a GET request to request to''http://www.omdbapi.com/t=FakeMovie&apikey=VALID_KEY'.<br>
+1.Send a POST request to request to''http://www.omdbapi.com/t=FakeMovie&apikey=VALID_KEY'.<br>
 2.Observe the response.<br>
 Expected result: API should return an appropriate error such as 'Movie not found'.<br>
 Actual result: API returns an response with "Movie not found", but the  status code is 200 OK, instead of 401.<br>
