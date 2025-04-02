@@ -13,10 +13,10 @@ Tests performed
 
 Find OMDb API 
 
-HTTP method for request: **GET**
-Request description: **Search the URL for verification**
-Test types / techniques used: **Functional Testing**
-Response status code: *200 OK**
+HTTP method for request: **GET**<br>
+Request description: **Search the URL for verification**<br>
+Test types / techniques used: **Functional Testing**<br>
+Response status code: *200 OK**<br>
 
 ![image](https://github.com/user-attachments/assets/5807ceeb-9d18-4375-a99b-ace455fce173)
 
@@ -40,9 +40,9 @@ JavaScript Tests:
 ![image](https://github.com/user-attachments/assets/500636a5-34ed-44de-b513-4f3c644e86ca)
 <br>
 
-.............
 
-<li>**Find by title**</li>
+
+**Find by title**
 
 HTTP method for request: **GET**<br>
 Request description: **Search for the movie by title in IMDb**<br>
@@ -50,98 +50,93 @@ Test types / techniques used: **Integration Testing**<br>
 Response status code: **200 OK**<br>
 
 
-**![image](https://github.com/user-attachments/assets/6e2f137d-b287-41f6-b24b-de32373111e8)
-**<br>
+![image](https://github.com/user-attachments/assets/6e2f137d-b287-41f6-b24b-de32373111e8)
+<br>
 
 JavaScript Tests:
 
-**![image](https://github.com/user-attachments/assets/097f5b0c-0845-4820-8968-0fb22471789d)
-**<br>
+![image](https://github.com/user-attachments/assets/097f5b0c-0845-4820-8968-0fb22471789d)
+<br>
 
-<li>**Find by ID**</li>
+**Find by ID**
 
 HTTP method for request: **GET**<br>
 Request description: **Search for the movie by ID in IMDb**<br>
 Test types / techniques used: **Integration Testing**<br>
 Response status code: **200 OK**<br>
 
-**![image](https://github.com/user-attachments/assets/64ce86c8-1161-48f4-abd1-be68a8148bcb)
+![image](https://github.com/user-attachments/assets/64ce86c8-1161-48f4-abd1-be68a8148bcb)
 
-**<br>
+<br>
 
 JavaScript Tests:
 
-*![image](https://github.com/user-attachments/assets/86c49acd-ed95-4602-b3a9-322919c920ab)
+![image](https://github.com/user-attachments/assets/86c49acd-ed95-4602-b3a9-322919c920ab)
+<br>
 
-**<br>
-
-<li>**Find by Title and ID **</li>
+**Find by Title and ID**
 
 HTTP method for request: **GET**<br>
 Request description: **Search for the movie by Title and ID in IMDb**<br>
 Test types / techniques used: **Integration Testing**<br>
 Response status code: **200 OK**<br>
 
-**![image](https://github.com/user-attachments/assets/494ff912-a8ec-48d6-8683-2c03a7b887ee)
-
-
-**<br>
+![image](https://github.com/user-attachments/assets/494ff912-a8ec-48d6-8683-2c03a7b887ee)
+<br>
 
 JavaScript Tests:
 
-*![image](https://github.com/user-attachments/assets/d1f0733a-d4b4-46f4-9421-eed191edd367)
+![image](https://github.com/user-attachments/assets/d1f0733a-d4b4-46f4-9421-eed191edd367)
 
-<li>**Find a Poster from a movie**</li>
+**Find a Poster from a movie**
 
 HTTP method for request: **GET**<br>
 Request description: **Search for a poster from a movie you found earlier in IMDb**<br>
 Test types / techniques used: **Integration Testing**<br>
 Response status code: **200 OK**<br>
 
-**![image](https://github.com/user-attachments/assets/5a5db192-80f1-4390-a566-daf1caab39a5)
-**<br>
+![image](https://github.com/user-attachments/assets/5a5db192-80f1-4390-a566-daf1caab39a5)
+<br>
 
 JavaScript Tests:
 
 ![image](https://github.com/user-attachments/assets/3058f6ac-a960-4ddd-add1-9604f989ca6e)
 
-**<br>
+<br>
 
-<li>**Post movie **</li>
+**Post movie**
 
 HTTP method for request: **POST**<br>
 Request description: **Post a new movie in OMDb from IMDb**<br>
 Test types / techniques used: **Integration Testing**<br>
 Response status code: **200 OK**<br>
 
-**![image](https://github.com/user-attachments/assets/8a9d5444-1d99-40b8-82e9-cb04cda4dc2c)
+![image](https://github.com/user-attachments/assets/8a9d5444-1d99-40b8-82e9-cb04cda4dc2c)
 
-**<br>
+<br>
 
 JavaScript Tests:
 
 ![image](https://github.com/user-attachments/assets/5de7d30f-f563-470a-900f-25219556a638)
 
-**<br>
+<br>
 
-<li>**Find the new movie**</li>
+**Find the new movie**
 
 HTTP method for request: **GET**<br>
 Request description: **Search for the new movie by ID in OMDb**<br>
 Test types / techniques used: **Integration Testing**<br>
 Response status code: **200 OK**<br>
 
-**![image](https://github.com/user-attachments/assets/03324ec0-bbf4-4c62-b1df-bfcf3e100774)
+![image](https://github.com/user-attachments/assets/03324ec0-bbf4-4c62-b1df-bfcf3e100774)
 
-
-**<br>
+<br>
 
 JavaScript Tests:
 
-*![image](https://github.com/user-attachments/assets/e4d7aa91-c1da-4140-b1bd-4ea6f8514686)
+![image](https://github.com/user-attachments/assets/e4d7aa91-c1da-4140-b1bd-4ea6f8514686)
 
-<li>**Post a Poster for the new movie **</li>
-
+**Post a Poster for the new movie**
 HTTP method for request: **POST**<br>
 Request description: **I posted a poster for the new movie in OMDb**<br>
 Test types / techniques used: **Integration Testing**<br>
@@ -156,7 +151,7 @@ JavaScript Tests:
 ![image](https://github.com/user-attachments/assets/762b2e64-106e-4e36-b046-1818c44b79f5)
 <br>
 
-<li>**Post an invalid movie **</li>
+**Post an invalid movie**
 
 HTTP method for request: **POST**<br>
 Request description: **I tried to post a movie that doesn't exist**<br>
@@ -174,7 +169,7 @@ JavaScript Tests:
 
 <br>
 
-<li>**Delete the poster **</li>
+**Delete the poster**
 
 HTTP method for request: **DELETE**<br>
 Request description: **I tried to delete the poster from the previous posted movie**<br>
@@ -191,7 +186,7 @@ JavaScript Tests:
 
 
 
-**<br>
+<br>
 </ol>
 
 <h2>Execution report for the created API collection </h2>
@@ -214,8 +209,8 @@ The collection was also run through newman directly from the terminal, and the r
 
 The following issues were identified while running the postman tests:<br>
 
-Bug: Invalid API Key does not return proper error message
-Preconditions: Use an incorrect API key in the request.
+Bug: Invalid API Key does not return proper error message.<br>
+Preconditions: Use an incorrect API key in the request.<br>
 Steps to reproduce:
 1. Send a GET request to 'http://www.omdbapi.com/?t=Titanic&apikey=INVALID_KEY'.
 2. Check the response.
