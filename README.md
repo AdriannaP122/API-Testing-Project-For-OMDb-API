@@ -214,33 +214,33 @@ Preconditions: Use an incorrect API key in the request.<br>
 Steps to reproduce:
 1. Send a GET request to 'http://www.omdbapi.com/?t=Titanic&apikey=INVALID_KEY'.
 2. Check the response.
-Expected result: API should return a clear error message stating 'Invalid API Key'.
-Actual result: Response returns a generic 401 Unauthorized message without clear details
+Expected result: API should return a clear error message stating 'Invalid API Key'.<br>
+Actual result: Response returns a generic 401 Unauthorized message without clear details<br>
 
 
-Bug: Search with a non-existent movie title returns a misleading response
-Preconditions: Use a random, non-existent movie title.
+Bug: Search with a non-existent movie title returns a misleading response<br>
+Preconditions: Use a random, non-existent movie title.<br>
 
-Steps to reproduce:
-1.Send a GET request to request to''http://www.omdbapi.com/t=FakeMovie&apikey=VALID_KEY'.
-2.Observe the response.
-Expected result: API should return an appropriate error such as 'Movie not found'.
-Actual result: API returns an response with "Movie not found", but the  status code is 200 OK, instead of 401.
+Steps to reproduce:<br>
+1.Send a GET request to request to''http://www.omdbapi.com/t=FakeMovie&apikey=VALID_KEY'.<br>
+2.Observe the response.<br>
+Expected result: API should return an appropriate error such as 'Movie not found'.<br>
+Actual result: API returns an response with "Movie not found", but the  status code is 200 OK, instead of 401.<br>
 
 <h2>Conclusions</h2>
 
-Conclusions on OMDb API Testing in Postman
-Testing Summary
-Total number of tests created: 11
-Total number of tests executed: 11
-Requirement coverage: Approximately 90% of the initial requirements were covered, including API response validation, error handling, and performance testing.
+Conclusions on OMDb API Testing in Postman<br>
+Testing Summary<br>
+Total number of tests created: 11<br>
+Total number of tests executed: 11<br>
+Requirement coverage: Approximately 90% of the initial requirements were covered, including API response validation, error handling, and performance testing.<br>
 
-Identified Risks
-The lack of clear error messages may cause confusion for both users and developers.
+Identified Risks<br>
+The lack of clear error messages may cause confusion for both users and developers.<br>
 
-Recommendations for Release
-It is recommended to optimize the response time for queries that return a large number of results.
-More detailed documentation on error codes would help developers debug issues more easily.
+Recommendations for Release<br>
+It is recommended to optimize the response time for queries that return a large number of results.<br>
+More detailed documentation on error codes would help developers debug issues more easily.<br>
 
-Lessons Learned
+Lessons Learned<br>
 Error messages should be clear and consistent to improve user experience.
