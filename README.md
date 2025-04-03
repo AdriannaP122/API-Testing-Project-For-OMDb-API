@@ -205,20 +205,12 @@ Below you can find the execution report that was generated through the Postman c
 
 The collection was also run through newman directly from the terminal, and the results can be found below:<br>
 
-**Inserati aici o poza cu raportul de executie din Newman**<br>
+![image](https://github.com/user-attachments/assets/36737b46-51bc-4b92-9920-7157076df417)
+
 
 <h2>Defects found</h2>
 
 The following issues were identified while running the postman tests:<br>
-
-Bug: Invalid API Key does not return proper error message.<br>
-Preconditions: Use an incorrect API key in the request.<br>
-Steps to reproduce:
-1. Send a GET request to 'http://www.omdbapi.com/?t=Titanic&apikey=INVALID_KEY'.
-2. Check the response.
-Expected result: API should return a clear error message stating 'Invalid API Key'.<br>
-Actual result: Response returns a generic 401 Unauthorized message without clear details<br>
-
 
 Bug: Posting a nonexistent movie title returns a wrong response<br>
 Preconditions: Use a random, non-existent movie title.<br>
@@ -229,6 +221,15 @@ Steps to reproduce:<br>
 Expected result: API should return an appropriate error such as 'Movie not found'.<br>
 Actual result: API returns an response with "Movie not found", but the  status code is 200 OK, instead of 401.<br>
 
+Bug: Another bug or deficiency in the design of the OMDb API is that all fields, including imdbRating, are returned as strings instead of their appropriate data types, meaning that imdbRating should be a number instead of a string.<br>
+
+Steps to reproduce:<br>
+1.Send a request to http://www.omdbapi.com/?apikey=d0236222&t=Titanic.<br>
+2.Observe the response.<br>
+Expected result: The imdbRating field should be returned as a number.<br>
+Actual result:  The field is returned as a string, requiring additional conversions to be used as a numeric data type.<br>
+
+
 <h2>Conclusions</h2>
 
 Conclusions on OMDb API Testing in Postman<br>
@@ -238,11 +239,22 @@ Total number of tests executed: 11<br>
 Requirement coverage: Approximately 90% of the initial requirements were covered, including API response validation, error handling, and performance testing.<br>
 
 Identified Risks<br>
-The lack of clear error messages may cause confusion for both users and developers.<br>
+Following the testing, the following risks were identified:<br>
 
-Recommendations for Release<br>
-It is recommended to optimize the response time for queries that return a large number of results.<br>
-More detailed documentation on error codes would help developers debug issues more easily.<br>
+Returning a 200 OK status code for a nonexistent resource can prevent proper error detection.<br>
+
+End users may receive confusing or incorrect messages, as the application cannot distinguish between a valid response and an error.<br>
+
+Returning all fields as strings, including numeric ones, may cause confusion and errors in data processing.<br>
+
+Recommendations for improving the API:<br>
+
+Error messages in the response body should be clear and accurately reflect the nature of the problem, helping developers and users understand the cause of the error.<br>
+
+Return the correct status codes.<br>
+
+Use appropriate data types, making it easier for developers to use and process the data.<br>
+
 
 Lessons Learned<br>
 Error messages should be clear and consistent to improve user experience.
