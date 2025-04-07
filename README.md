@@ -1,10 +1,10 @@
-API Testing Project for **OMDbAPI**
+<h1>API Testing Project for **OMDbAPI**1</h1>
 
 The scope of this project is to use all  API knowledge gained throught the Software Testing course and apply them in practice, using a live application.
 THe OMDb API is an API where you can view, insert or obtain movie information, all content and images from an movie database.<br>
 Application under test: **OMDbAPI**
 
-Tools used: Postman.
+<strong>Tools used: Postman.<strong>
 
 In the Authorization section, it will be used for each test an API Key: d0236222
 
