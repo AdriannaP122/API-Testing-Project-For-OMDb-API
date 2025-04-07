@@ -10,7 +10,7 @@ In the Authorization section, it will be used for each test an API Key: d0236222
 
 Collection link: **https://www.omdbapi.com/**
 
-2</h2>**Tests performed**2</h2>
+</h2>**Tests performed**</h2>
 
 
 **Find OMDb API**
