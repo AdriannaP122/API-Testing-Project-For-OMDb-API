@@ -12,32 +12,38 @@ In the Authorization section, it will be used for each test an API Key: d0236222
 
 Collection link: **https://www.omdbapi.com/**<br>
 
+<br>
 
-</h1>Tests performed</h1><br>
+<h1>Tests performed</h1><br>
+
+<br>
 
 
-
-
-
-
-**Find OMDb API**
+<h3> Find by title</h3>
 
 HTTP method for request: **GET**<br>
-Request description: **Search the URL for verification**<br>
-Test types / techniques used: **Functional Testing**<br>
-Response status code: *200 OK**<br>
+Request description: **Search for the movie by title in IMDb**<br>
+Test types / techniques used: **Integration Testing**,**Equivalence Partitioning**,**Positive Tests**<br>
+Response status code: **200 OK**<br>
 
-![image](https://github.com/user-attachments/assets/5807ceeb-9d18-4375-a99b-ace455fce173)
+
+![image](https://github.com/user-attachments/assets/e764fb1f-ddbc-48da-8312-f74a36e9bfc5)
+
+
+<br>
 
 JavaScript Tests:
 
-![image](https://github.com/user-attachments/assets/a8e4fd71-3f3d-4aa1-b91d-9c3c8b98a5ec)
+![image](https://github.com/user-attachments/assets/af8d27d8-9f4b-4257-96e4-54013110f189)
 
-<li>**Fake API Key**</li>
+<br>
+
+
+<h3>Fake API Key</h3>
 
 HTTP method for request: **GET**<br>
 Request description: **I inserted an invalid API key to check the server's functionality**<br>
-Test types / techniques used: **Security Testing**<br>
+Test types / techniques used: **Security Testing**,**Equivalence Partitioning**,**Negative Tests**<br>
 Response status code: *401 Unauthorized***<br>
 
 
@@ -50,28 +56,11 @@ JavaScript Tests:
 <br>
 
 
-
-**Find by title**
-
-HTTP method for request: **GET**<br>
-Request description: **Search for the movie by title in IMDb**<br>
-Test types / techniques used: **Integration Testing**<br>
-Response status code: **200 OK**<br>
-
-
-![image](https://github.com/user-attachments/assets/6e2f137d-b287-41f6-b24b-de32373111e8)
-<br>
-
-JavaScript Tests:
-
-![image](https://github.com/user-attachments/assets/097f5b0c-0845-4820-8968-0fb22471789d)
-<br>
-
-**Find by ID**
+<h3>Find by ID</h3>
 
 HTTP method for request: **GET**<br>
 Request description: **Search for the movie by ID in IMDb**<br>
-Test types / techniques used: **Integration Testing**<br>
+Test types / techniques used: **Integration Testing**,**Equivalence Partitioning**,**Positive Tests**<br>
 Response status code: **200 OK**<br>
 
 ![image](https://github.com/user-attachments/assets/64ce86c8-1161-48f4-abd1-be68a8148bcb)
@@ -83,11 +72,11 @@ JavaScript Tests:
 ![image](https://github.com/user-attachments/assets/86c49acd-ed95-4602-b3a9-322919c920ab)
 <br>
 
-**Find by Title and ID**
+<h3>Find by Title and ID</h3>
 
 HTTP method for request: **GET**<br>
 Request description: **Search for the movie by Title and ID in IMDb**<br>
-Test types / techniques used: **Integration Testing**<br>
+Test types / techniques used: **Integration Testing**,**Decision Table Testing**,**Positive Tests**<br>
 Response status code: **200 OK**<br>
 
 ![image](https://github.com/user-attachments/assets/494ff912-a8ec-48d6-8683-2c03a7b887ee)
@@ -97,7 +86,7 @@ JavaScript Tests:
 
 ![image](https://github.com/user-attachments/assets/d1f0733a-d4b4-46f4-9421-eed191edd367)
 
-**Find a Poster from a movie**
+<h3>Find a Poster from a movie</h3>
 
 HTTP method for request: **GET**<br>
 Request description: **Search for a poster from a movie you found earlier in IMDb**<br>
@@ -113,11 +102,11 @@ JavaScript Tests:
 
 <br>
 
-**Post movie**
+<h3>Post movie</h3>
 
 HTTP method for request: **POST**<br>
 Request description: **Post a new movie in OMDb from IMDb**<br>
-Test types / techniques used: **Integration Testing**<br>
+Test types / techniques used: **Integration Testing**,**Equivalence Partitioning**,**Positive Tests**<br>
 Response status code: **200 OK**<br>
 
 ![image](https://github.com/user-attachments/assets/8a9d5444-1d99-40b8-82e9-cb04cda4dc2c)
@@ -130,11 +119,11 @@ JavaScript Tests:
 
 <br>
 
-**Find the new movie**
+<h3>Find the new movie</h3>
 
 HTTP method for request: **GET**<br>
 Request description: **Search for the new movie by ID in OMDb**<br>
-Test types / techniques used: **Integration Testing**<br>
+Test types / techniques used: **Integration Testing**,**State Transition Testing**,**Positive Tests**<br>
 Response status code: **200 OK**<br>
 
 ![image](https://github.com/user-attachments/assets/03324ec0-bbf4-4c62-b1df-bfcf3e100774)
@@ -144,11 +133,12 @@ Response status code: **200 OK**<br>
 JavaScript Tests:
 
 ![image](https://github.com/user-attachments/assets/e4d7aa91-c1da-4140-b1bd-4ea6f8514686)
+<br>
 
-**Post a Poster for the new movie**
+<h3>Post a Poster for the new movie</h3><br>
 HTTP method for request: **POST**<br>
 Request description: **I posted a poster for the new movie in OMDb**<br>
-Test types / techniques used: **Integration Testing**<br>
+Test types / techniques used: **Unit Testing**,**Positive Tests**<br>
 Response status code: **200 OK**<br>
 
 ![image](https://github.com/user-attachments/assets/afe15113-04ad-4110-a7b5-f674a867e23b)
@@ -160,11 +150,11 @@ JavaScript Tests:
 ![image](https://github.com/user-attachments/assets/762b2e64-106e-4e36-b046-1818c44b79f5)
 <br>
 
-**Post an invalid movie**
+<h3>Post an invalid movie</h3>
 
 HTTP method for request: **POST**<br>
 Request description: **I tried to post a movie that doesn't exist**<br>
-Test types / techniques used: **Integration Testing**<br>
+Test types / techniques used: **Integration Testing**,**Equivalence Partitioning**,**Negative Tests**<br>
 Response status code: **200 OK**<br>
 
 ![image](https://github.com/user-attachments/assets/95739166-1d5f-4d08-a9d5-12d7351edde2)
@@ -178,11 +168,11 @@ JavaScript Tests:
 
 <br>
 
-**Delete the poster**
+<h3>Delete the poster</h3>
 
 HTTP method for request: **DELETE**<br>
 Request description: **I tried to delete the poster from the previous posted movie**<br>
-Test types / techniques used: **Integration Testing**<br>
+Test types / techniques used: **Integration Testing**,**Equivalence Partitioning**<br>
 Response status code: **405 Method Not Allowed**<br>
 
 ![image](https://github.com/user-attachments/assets/165a7e26-c8f3-4040-9c66-8318be52b0ae)
@@ -198,15 +188,16 @@ JavaScript Tests:
 <br>
 </ol>
 
-<h2>Execution report for the created API collection </h2>
+<h1>Execution report for the created API collection </h1>
 
 Below you can find the execution report that was generated through the Postman collection runner. <br>
 
-![image](https://github.com/user-attachments/assets/0f838d66-e93a-4a3d-8583-cbdd1160478d)
-![image](https://github.com/user-attachments/assets/7cf51d41-80b2-46b1-90af-8af547b19bd9)
-![image](https://github.com/user-attachments/assets/37c89363-1000-4622-b03d-4ab8ad6387a4)
-![image](https://github.com/user-attachments/assets/be9106c8-cc15-46a1-9a52-82c7e254e2e5)
-![image](https://github.com/user-attachments/assets/da5ed91a-27f8-47e2-8907-34689ac164d4)
+![image](https://github.com/user-attachments/assets/cec87c67-256e-4367-a537-c484447685fb)<br>
+![image](https://github.com/user-attachments/assets/b0ef63f6-f995-4d0e-be29-8a62f8c5d831)<br>
+![image](https://github.com/user-attachments/assets/0da90f74-133a-4d7b-8bde-bf60513720eb)<br>
+![image](https://github.com/user-attachments/assets/f0f232ee-8661-4cce-b756-37ea57a4e72a)<br>
+![image](https://github.com/user-attachments/assets/ea281084-d698-460e-b7ce-a7abe637e7ec)<br>
+
 
 <br>
 
@@ -215,7 +206,7 @@ The collection was also run through newman directly from the terminal, and the r
 ![image](https://github.com/user-attachments/assets/36737b46-51bc-4b92-9920-7157076df417)
 
 
-<h2>Defects found</h2>
+<h1>Defects found</h1>
 
 The following issues were identified while running the postman tests:<br>
 
@@ -241,8 +232,8 @@ Actual result:  The field is returned as a string, requiring additional conversi
 
 Conclusions on OMDb API Testing in Postman<br>
 Testing Summary<br>
-Total number of tests created: 11<br>
-Total number of tests executed: 11<br>
+Total number of tests created: 10<br>
+Total number of tests executed: 10<br>
 Requirement coverage: Approximately 90% of the initial requirements were covered, including API response validation, error handling, and performance testing.<br>
 
 Identified Risks<br>
