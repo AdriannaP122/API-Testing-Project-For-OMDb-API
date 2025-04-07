@@ -4,13 +4,13 @@ The scope of this project is to use all  API knowledge gained throught the Softw
 THe OMDb API is an API where you can view, insert or obtain movie information, all content and images from an movie database.<br>
 Application under test: **OMDbAPI**
 
-4</h4><strong>Tools used: Postman.<strong>4</h4>
+</h1><strong>Tools used: Postman.<strong></h1>
 
 In the Authorization section, it will be used for each test an API Key: d0236222
 
 Collection link: **https://www.omdbapi.com/**
 
-</h2>**Tests performed**</h2>
+</h1>**Tests performed**</h1>
 
 
 **Find OMDb API**
